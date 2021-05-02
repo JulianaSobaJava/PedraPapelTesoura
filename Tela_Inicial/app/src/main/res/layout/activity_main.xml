@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="321dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="Bem-vindo ao App Pedra Papel Tesoura "
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="123dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:onClick="btn"
+        android:text="Jogar"
+        android:textColor="#686060"
+        app:backgroundTint="#FDFBFB"
+        app:cornerRadius="40px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.215" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="284dp"
+        android:layout_height="235dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.016"
+        app:srcCompat="@drawable/imagem1" />
+
+    <ImageButton
+        android:id="@+id/ir"
+        android:layout_width="44dp"
+        android:layout_height="38dp"
+        android:background="#FFFFFF"
+        android:onClick="onClick"
+        android:tint="#201E1E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@android:drawable/ic_notification_clear_all" />
+</androidx.constraintlayout.widget.ConstraintLayout>

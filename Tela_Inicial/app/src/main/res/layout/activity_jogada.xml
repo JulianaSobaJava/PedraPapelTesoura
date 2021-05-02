@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onClick"
+    tools:context=".Jogada">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="193dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="Escolha  do App"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/tela"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.783" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Escolha uma opção abaixo"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/papel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:onClick="onClick"
+        android:tint="#121212"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_notification_clear_all" />
+
+    <ImageButton
+        android:id="@+id/tec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:onClick="botao"
+        android:tint="#0E0E0E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tesoura"
+        app:layout_constraintVertical_bias="0.294"
+        app:srcCompat="@android:drawable/stat_notify_sync" />
+
+    <ImageView
+        android:id="@+id/tela"
+        android:layout_width="252dp"
+        android:layout_height="186dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.896"
+        app:srcCompat="@drawable/padrao" />
+
+    <ImageView
+        android:id="@+id/tesoura"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:onClick="tesoura"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:srcCompat="@drawable/tesoura" />
+
+    <ImageView
+        android:id="@+id/papel"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:onClick="papel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:srcCompat="@drawable/papel" />
+
+    <ImageView
+        android:id="@+id/pedra"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:onClick="pedra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:srcCompat="@drawable/pedra" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
